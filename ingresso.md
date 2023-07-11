@@ -51,9 +51,9 @@ De forma a facilitar a identificação do nó do participante durante o piloto, 
 
 * participante: identificador do participante. Exemplo: bcb, selic, etc
 
-* sequencial: número sequencial (caso o participante tenha mais de nó)
+* sequencial: número sequencial (caso o participante tenha mais de um nó)
     
-Configurar o nome do nó do participante no parâmetro **identity** no arquivo config.toml ou na variável de ambiente BESU_IDENTITY.
+Configurar o nome do nó do participante no parâmetro `identity` no arquivo config.toml ou na variável de ambiente `BESU_IDENTITY`.
     - https://besu.hyperledger.org/stable/public-networks/reference/cli/options/#identity
 
 ### Gênesis
@@ -127,11 +127,11 @@ Para solicitar a permissão, siga os passos abaixo:
 
 ## Execução do nó do participante
 
-Após realizar os passos acima, e receber a confirmação do Banco Central do Brasil sobre a autorização do nó, execute o nó do participante e verifique as seguintes informações:
+Após realizar os passos acima, e o recebimento da confirmação do Banco Central do Brasil sobre a autorização do nó, execute o nó do participante e verifique as seguintes informações:
 
 Para conferir se o nó subiu corretamente, verifique as seguintes informações:
 
-* Caso esteja executando o nó em container, verifique se ele está com status healthy.
+* Caso esteja executando o nó em container, verifique se ele está com status `healthy`.
 
 * Realize um teste de conexão (telnet, nc, echo) no endereço e porta do seu nó.
 Importante realizar este teste na porta de _discovery_ tanto para o protocolo TCP quanto para o protocolo UDP.
@@ -225,7 +225,7 @@ Importante realizar este teste na porta de _discovery_ tanto para o protocolo TC
     
 Se você conseguiu implantar o seu nó e ele conseguiu conectar nos peers que o bootnode disponibilizou, então bem-vindo à rede do piloto do Real Digital.
 
-O próximo passo será validar o uso de smart contract e transações na rede.
+O próximo passo será validar o uso de smart contracts e transações na rede.
 
 ## Problemas comuns
 
